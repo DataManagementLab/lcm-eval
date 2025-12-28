@@ -153,7 +153,7 @@ class Evaluator:
              workloads: List[EvaluationWorkload],
              metrics: List[Metric],
              plot_single_workloads: bool = True,
-             plot_limit: int = np.Inf,
+             plot_limit: int = np.inf,
              model_configs: List[ModelConfig] = [],
              seeds: List[int] = []):
 
