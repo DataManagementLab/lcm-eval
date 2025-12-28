@@ -38,7 +38,7 @@ class OperatorTree:
     def get_cardinality(self) -> int:
         return self.properties['Actual Rows']
 
-    def min_cardinality(self, actual_cardinality: int = np.Inf) -> int:
+    def min_cardinality(self, actual_cardinality: int = np.inf) -> int:
         """Recursively look for minimal cardinality in plan """
         if self.has_cardinality():
             if self.get_cardinality() < actual_cardinality:
